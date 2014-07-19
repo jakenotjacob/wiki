@@ -1,0 +1,12 @@
+====== Searching in Linux ======
+----
+
+===== find =====
+=== By type ===
+find **-type type_descriptor** query
+  * f - regular file
+  * d - directory
+  * l - sym link
+  * c - character device
+  * b - block device
+

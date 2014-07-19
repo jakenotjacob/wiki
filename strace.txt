@@ -1,0 +1,9 @@
+====== strace ======
+----
+
+==== Flags ====
+  * -p (process PID)
+  * -s (Num of bytes to read - ie 4096_
+  * -e trace=read,write
+  * -f (Follow child processes)
+  * -c (Count time spent in system call)
