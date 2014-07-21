@@ -1,0 +1,5 @@
+====== sshfs ======
+----
+Mounting remote directories over ssh!
+
+sshfs -p (PORT) (WHO)@(WHERE):(PATH_TO_MNT) (LOCAL_MNT_SPOT) (FLAGS)

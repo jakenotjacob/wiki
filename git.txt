@@ -1,0 +1,9 @@
+====== git ======
+----
+
+==== Reverting to previous commit ====
+git stash
+  * If there is uncommitted work you want to have saved
+git reset --hard 0x00SomeHashHere00
+git stash pop
+  * Add back in uncommitted work
