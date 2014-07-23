@@ -1,12 +1,26 @@
 ====== ssh ======
 ----
 
-Permissions of .ssh folder
+====Permissions of .ssh folder====
 <code>
 chmod g-w,o-w ~
 chmod 700 ~/.ssh 
 chmod 644 ~/.ssh/id_rsa.pub
 chmod 600 ~/.ssh/id_rsa
+</code>
+
+==== Add keychain to SSH ====
+This allows us to have a passworded ssh key, but remove the need to enter it everytime we use ssh.
+<code>
+echo 'eval $(ssh-agent)' >> ~/.bash_profile
+ssh-add ~/.ssh/id_rsa
+</code>
+  * add ssh-agent to start on login shell 
+  * add key to ssh-agent cache
+
+==== Notify-send over ssh ====
+<code>
+ssh -X user@host 'DISPLAY=:0 notify-send "TEST MESSAGE."'
 </code>
 
 ----

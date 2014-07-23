@@ -2,8 +2,14 @@
 ----
 
 ==== Reverting to previous commit ====
+Use the first/third lines if there is uncommited work that you want to save, and reinsert after the reset.
+<code>
 git stash
-  * If there is uncommitted work you want to have saved
 git reset --hard 0x00SomeHashHere00
 git stash pop
-  * Add back in uncommitted work
+</code>
+
+==== Viewing changes of current commit ====
+<code>
+git diff --cached
+</code>
