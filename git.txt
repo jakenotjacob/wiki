@@ -1,6 +1,25 @@
 ====== git ======
 ----
 
+==== Branching ====
+Creating a nested branch; feature branches off of develop
+<code>
+git checkout -b myfeature develop
+</code>
+
+=== Merging Branches ===
+myfeature has been finished! Time to merge back into develop.
+<code>
+git checkout develop
+git merge --no-ff myfeature
+git branch -d myfeature
+git push origin develop
+</code>
+  * Switch back to develop branch to "pull in" the feature
+  * "--no-ff" to create a new commit object when merging
+  * Remove the old branch
+  * Push it!
+
 ==== Reverting to previous commit ====
 Use the first/third lines if there is uncommited work that you want to save, and reinsert after the reset.
 <code>
