@@ -1,0 +1,8 @@
+======= hexdumps =======
+----
+
+====== xxd ======
+Generating a hexdump of a file.
+<code>
+xxd //file//
+</code>

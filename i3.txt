@@ -1,0 +1,8 @@
+====== i3 ======
+----
+
+==== Setting wallpaper ====
+== feh ==
+<code>
+feh --bg-scale --no-xinerama /path/to/some/image.jpg
+</code>

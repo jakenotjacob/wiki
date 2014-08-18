@@ -1,0 +1,10 @@
+====== File Descriptor ======
+==== 0 - STDIN ====
+==== 1 - STDOUT ====
+==== 2 - STDERR ====
+
+===== Finding by process =====
+
+<code>
+ls -l /proc/$PID/fd/
+</code>
